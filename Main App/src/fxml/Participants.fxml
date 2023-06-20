@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="616.0" prefWidth="648.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controllerparticipants">
+    <children>
+      <Button fx:id="btnchoisir" layoutX="506.0" layoutY="298.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="26.0" prefWidth="127.0" text="Choisir formation" />
+      <TitledPane animated="false" layoutX="-87.0" layoutY="-89.0" text="untitled" />
+      <TableView fx:id="TableView1" layoutX="24.0" layoutY="379.0" prefHeight="200.0" prefWidth="610.0">
+         <columns>
+            <TableColumn fx:id="idorganisme" prefWidth="119.19998550415039" text="idorganisme" />
+            <TableColumn fx:id="intitulefor" prefWidth="118.4000244140625" text="Intitule formation" />
+            <TableColumn fx:id="Nompar" prefWidth="120.79998779296875" text="Nom participant" />
+            <TableColumn fx:id="Nomfor" prefWidth="100.79998779296875" text="Nom formateur" />
+            <TableColumn fx:id="libelle" prefWidth="73.60006713867188" text="libelle" />
+         </columns>
+      </TableView>
+      <Text fill="#264eff" layoutX="220.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formations Disponibles">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#264eff" layoutX="263.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mes Formation">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="deconnexion" layoutX="548.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" text="deconnexion" />
+      <TableView fx:id="TableView" layoutX="24.0" layoutY="61.0" prefHeight="200.0" prefWidth="610.0">
+         <columns>
+            <TableColumn fx:id="Intitule" prefWidth="75.0" text="Intitule" />
+            <TableColumn fx:id="Domaine" prefWidth="85.60002899169922" text="Domaine" />
+            <TableColumn fx:id="nb_jour" prefWidth="105.5999755859375" text="Nombre Jours" />
+            <TableColumn fx:id="Date" prefWidth="64.0" text="Date" />
+            <TableColumn fx:id="formateur" prefWidth="92.0" text="Formateur" />
+            <TableColumn fx:id="Nb_participants" prefWidth="108.80001831054688" text="Nb participant " />
+            <TableColumn fx:id="Code_formation" prefWidth="75.0" text="Code formation" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnretirer" layoutX="506.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="26.0" prefWidth="127.0" text="Retirer formation" />
+      <Label fx:id="text1" layoutX="14.0" layoutY="16.0" prefHeight="39.0" prefWidth="254.0" style="-fx-background-color: fffff;" text="Participant:" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

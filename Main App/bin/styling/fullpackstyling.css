@@ -1,0 +1,174 @@
+.button
+{
+-fx-background-color : #FFF;
+-fx-border-color: #355ECE;
+-fx-text-fill:  #0C3988;
+}
+.button:hover
+{
+-fx-background-color : #355ECE ;
+-fx-text-fill:  #FFF;
+}
+.button:pressed
+{
+-fx-background-color : #0C39FF ;
+-fx-text-fill: #FFF;
+}
+
+.button3{
+	-fx-background-color : #355ECE;
+	-fx-border-color: #FFF	;
+	-fx-text-fill:  #FFF;
+}
+
+.button3:hover
+{
+-fx-background-color : #355ECE ;
+-fx-text-fill:  #FFF;
+}
+
+.button2
+{
+-fx-background-color :  #0C39FF;
+-fx-border-color: #FFF;
+-fx-text-fill:  #FFF;
+}
+.button2:hover
+{
+-fx-background-color : #0C3988 ;
+-fx-text-fill:   #FFF;
+}
+.button2:pressed
+{
+-fx-background-color : #0C3400 ;
+-fx-text-fill: #FFF;
+}
+
+.table-view {
+    -fx-background-color: transparent;  
+}
+/*HEADER */
+.table-view .column-header{     
+    -fx-background-color: transparent;    /* made transparent */
+    -fx-size: 45.0px;
+    -fx-min-height: 45.0px;  
+    -fx-cursor: hand;
+}
+.table-view .column-header .label {
+    -fx-font-size: 1.083333em;
+    -fx-font-weight: bold;  
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-padding: 5.0 5.0 5.0 5.0;
+}
+.table-view .filler{
+    -fx-background-radius: 0.0 5.0 0.0 0.0;
+    -fx-background-color: transparent;    /* made transparent */
+    -fx-size: 45.0px;
+    -fx-min-height: 45.0px;  
+}
+.table-view .show-hide-columns-button{
+    -fx-background-color:  #355ECE;  
+}
+.table-view .column-drag-header{
+    -fx-background-color:  #355ECE;
+    -fx-cursor: h-resize;
+}
+.table-view .column-resize-line{
+    -fx-text-fill: white;
+    -fx-background-color: black;
+    -fx-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 1;
+}
+.table-view .column-header .sort-order{
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+.table-view .placeholder{
+     -fx-background-color: white;  
+}
+.table-view .placeholder .label {
+    -fx-font-size: 1.1em;
+    -fx-font-weight: bold;  
+    -fx-text-fill:  #355ECE;
+    -fx-alignment: center;
+}
+.table-view .virtualflow{
+    -fx-background-color: white;
+}
+/* Each row in the table is a table-row-cell. Inside a table-row-cell is any
+   number of table-cell. */
+.table-row-cell {
+    -fx-background-color: transparent; 
+    -fx-border-width: 0.0;
+    -fx-padding: 10.0 0.0 10.0 0.0;  
+    -fx-pref-height: 45.0px;
+}
+.table-row-cell:filled:even{
+    -fx-background-color: white;
+}
+.table-row-cell:filled:odd{
+    -fx-background-color: #F6F7F8;
+}
+.table-view:row-selection .table-row-cell:filled:hover {
+    /*-fx-background-color: red;*/
+}
+.table-view:row-selection .table-row-cell:filled:hover .text{
+    /*-fx-fill: white;*/     
+}
+.table-row-cell:filled:focused {
+    -fx-background-color: #e1e2e3;         
+    -fx-background-insets: 0.0;
+}
+.table-row-cell:filled:focused .text{  
+}
+.table-row-cell .table-column{
+    -fx-border-width: 0.0;  
+    -fx-padding: 0.0 0.0 0.0 5.0;   
+}
+/*TESTO DELLE CELLE */
+.table-row-cell .text{
+    -fx-font-size: 1.1em;
+    -fx-fill: #6F7B8A;
+}
+/*SCROLL BAR VERTICALE */
+.table-view .scroll-bar:vertical{      
+    -fx-padding: 0.0 0.0 0.0 0.0;
+}
+/*SCROLL BAR ORIZZONTALE */
+.table-view .scroll-bar:horizontal {
+    -fx-padding: 0.0 0.0 0.0 0.0;
+}
+/* I ADDED THIS */
+.table-view .column-header-background {
+  -fx-background-radius: 5.0 5.0 0.0 0.0;
+    -fx-background-color:  #355ECE;
+}
+
+
+
+
+
+/* chart properties */
+
+.chart-pie-label-line {
+    -fx-stroke: black;
+    -fx-fill: black;
+}
+
+.chart-pie-label { /*this is what you need for labels*/
+    -fx-fill: black;
+    -fx-font-size: 1em;
+} 
+.chart-legend {
+   -fx-background-color: #DCDCDC;
+}
+
+
+#custom{
+	-fx-background-color: transparent;
+	-fx-border-color: #355ECE;
+	-fx-border-width: 0px 0px 2px 0px
+}
+
